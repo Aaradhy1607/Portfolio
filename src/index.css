@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-space-950: #02040a;
+  --color-space-900: #050b14;
+  --color-space-800: #0a1526;
+  --color-space-700: #0f2342;
+
+  --color-cyber-cyan: #00f0ff;
+  --color-cyber-neon: #00ffff;
+  --color-cyber-blue: #3b82f6;
+  --color-cyber-violet: #8b5cf6;
+  --color-cyber-emerald: #10b981;
+  --color-cyber-amber: #f59e0b;
+  --color-cyber-rose: #f43f5e;
+
+  --font-orbitron: 'Orbitron', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Rajdhani', 'Inter', sans-serif;
+
+  --shadow-cyan-glow: 0 0 25px rgba(0, 240, 255, 0.4);
+  --shadow-blue-glow: 0 0 25px rgba(59, 130, 246, 0.4);
+  --shadow-amber-glow: 0 0 25px rgba(245, 158, 11, 0.4);
+  --shadow-violet-glow: 0 0 25px rgba(139, 92, 246, 0.4);
+}
+
+/* Base Body Styles */
+html,
+body {
+  background-color: #02040a;
+  color: #f1f5f9;
+  font-family: 'Rajdhani', 'Inter', sans-serif;
+  overflow: hidden;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Custom WebGL and Sci-Fi Interface Utility Classes */
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-sans {
+  font-family: 'Rajdhani', 'Inter', sans-serif;
+}
+
+/* Scrollbar Customization for Tactical Sci-Fi Panes */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050b14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0284c7;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
+
+/* Glowing Holographic Text Utilities */
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7), 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
+.text-glow-amber {
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.7), 0 0 20px rgba(245, 158, 11, 0.4);
+}
+
+.text-glow-emerald {
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.7), 0 0 20px rgba(16, 185, 129, 0.4);
+}
